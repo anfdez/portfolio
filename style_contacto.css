@@ -1,0 +1,47 @@
+/* From Uiverse.io by ZeroKaarma */ 
+body {
+    background-color:#f0e3fc!important;
+}
+
+
+h1 {
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    
+  }
+
+  h2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+header {
+    padding: 15px 25px; /* Ajusta el padding a tu gusto */
+}
+
+#contacto h2 {
+    color: #000000;
+    font-weight: 800;
+  }
+  
+  #contacto p {
+    color: #555;
+  }
+  
+  #contacto .form-label {
+    font-weight: 600;
+  }
+  
+  #contacto button {
+    background-color: #9959b2;
+    border: none;
+  }
+  
+  #contacto button:hover {
+    background-color: #0056b3;
+  }
