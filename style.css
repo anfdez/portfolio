@@ -60,7 +60,7 @@ header {
     background: linear-gradient(
       90deg,
       rgba(222, 0, 75, 1) 0%,
-      rgba(191, 70, 255, 1) 49%,
+      #bf46ff 49%,
       rgba(0, 212, 255, 1) 100%
     );
     border-radius: 40rem;

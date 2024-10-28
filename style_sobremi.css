@@ -1,0 +1,227 @@
+body {
+    background-color:#f0e3fc!important;
+}
+
+
+h1 {
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    
+  }
+
+header {
+    padding: 15px 25px; /* Ajusta el padding a tu gusto */
+}
+
+
+
+.semi-transparente {
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+.section {
+    padding: 50px 0;
+    background-color: #ffffff66;
+    text-align: center;
+    opacity: 1;
+}
+
+.card::before {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  top: 20%;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  
+  position: absolute;
+  filter: blur(10px);
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+}
+
+.cards .red,
+.cards .blue,
+.cards .green {
+  width: 200px;
+  height: 180px;
+  font-family: "CustomFont", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  backdrop-filter: blur(30px);
+  background-color: #f0e3fc;
+  border: 1px solid #f0e3fc;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
+
+h2 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgb(255, 255, 255, 0.1);
+    --animation-color:#9959b2;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+/* CARDS EXPERIENCIA */ 
+.card {
+    width: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  @keyframes shine {
+    0% {
+      transform: translateX(-50%) rotate(45deg);
+    }
+    100% {
+      transform: translateX(100%) rotate(45deg);
+    }
+  }
+  
+  .card-content {
+    padding: 24px;
+    
+    
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 16px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color:#9959b2;
+    transition: width 0.3s ease;
+  }
+  
+  .card:hover .card-title::after {
+    width: 100px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .card-tag {
+    font-size: 12px;
+    color:#9959b2;
+    background-color: hwb(226 93% 0%);
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .card-tag:hover {
+    background-color: #9959b2;
+
+    transform: translateY(-2px);
+  }
+  
