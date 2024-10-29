@@ -29,67 +29,45 @@ header {
     opacity: 1;
 }
 
-.card::before {
+.cardi::before {
+
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
   top: 20%;
+
 }
 
-.card::before,
-.card::after {
-  content: "";
+.cardi::before,
+.cardi::after {
   
   position: absolute;
-  filter: blur(10px);
+  
 }
 
-.cards {
-  display: flex;
-  gap: 40px;
-}
 
-.cards .red,
-.cards .blue,
-.cards .green {
-  width: 200px;
-  height: 180px;
-  font-family: "CustomFont", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  backdrop-filter: blur(30px);
+.cartas .red {
+ 
   background-color: #f0e3fc;
   border: 1px solid #f0e3fc;
+  
 }
 
-.cards .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.cartas .cardi {
   border-radius: 10px;
   color: rgb(0, 0, 0);
   cursor: pointer;
   transition: 400ms;
 }
 
-.cards .card p.tip {
-  font-size: 1em;
-  font-weight: 500;
-}
 
-.cards .card p.second-text {
-  font-size: 0.7em;
-}
-
-.cards .card:hover {
+.cartas .cardi:hover {
   transform: scale(1.1, 1.1);
+  filter: blur(0);
 }
 
-.cards:hover > .card:not(:hover) {
-  filter: blur(5px);
-  transform: scale(0.9, 0.9);
-}
+
+
 
 h2 {
 
