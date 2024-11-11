@@ -1,21 +1,95 @@
 body {
-    background-color:#f0e3fc!important;
+  background-color:#f0e3fc!important;
 }
-
 
 h1 {
-    font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-    
-  }
-
-header {
-    padding: 15px 25px; /* Ajusta el padding a tu gusto */
+  font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+  
 }
 
-/* From Uiverse.io by Wendell47 */ 
+h2 {
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+header {
+  padding: 15px 25px; /* Ajusta el padding a tu gusto */
+  
+}
+
+/* Estilos para el navbar */
+
+.navbar {
+  background-color: #f0e3fc;
+  width: 100%;
+}
+
+.navbar-collapse {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.collapse {
+  padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+  
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+/* Efecto hover */
+.nav-link:hover {
+  color: #f0e3fc;
+  background-color: #d1e7d6;
+  border-radius: 5px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-toggler {
+    margin: 0 auto; /* Centra el botón de hamburguesa horizontalmente */
+    display: block; /* Asegúrate de que esté como bloque para centrarlo */
+    margin-top: 20px;
+  }
+}
+
+/*boton saber más*/
+
 .button {
     display: inline-flex;
     align-items: center ;

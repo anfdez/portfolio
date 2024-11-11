@@ -1,110 +1,158 @@
-body{
-  
-    background-color:#f0e3fc!important;
+/* común en todos los styles */
 
+
+body {
+  background-color:#f0e3fc!important;
 }
 
 h1 {
-    font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-    
-  }
-
-  h2 {
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    header {
-        padding: 15px 25px; /* Ajusta el padding a tu gusto */
-    }
-    
+  font-family: "Playwrite CU", cursive;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
   
 }
-.carrusel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+
+h2 {
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
-.imagenes{
-    display: flex;
+
+header {
+  padding: 15px 25px; /* Ajusta el padding a tu gusto */
+  
+}
+
+/* Estilos para el navbar */
+
+.navbar {
+  background-color: #f0e3fc;
+  width: 100%;
+}
+
+.navbar-collapse {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.collapse {
+  padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+  
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 10px;
+  transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+/* Efecto hover */
+.nav-link:hover {
+  color: #f0e3fc;
+  background-color: #d1e7d6;
+  border-radius: 5px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-nav {
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-toggler {
+    margin: 0 auto; /* Centra el botón de hamburguesa horizontalmente */
+    display: block; /* Asegúrate de que esté como bloque para centrarlo */
+    margin-top: 20px;
+  }
 }
-.img{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    height: 576px;
-    width: 1134px;
-    border-radius: 15px ;
-    margin: 5px;
-    object-fit: cover;
-    filter: saturate(175%);
+ /*proyectos*/
+
+.container {
+  background-color:#fcf1b9; /* Fondo ligero para la sección */
+  padding: 40px; /* Espaciado interior */
+  border-radius: 8px; /* Bordes redondeados para el contenedor */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 10px;
 }
-.texto{
-    overflow: hidden;
-    position: absolute;
-    flex-direction: column;
-    transform: translateY(0px);
-    margin-bottom: 9px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(63, 106, 138, 0.21);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #d1e7d6; /* Fondo blanco para las tarjetas */
+  border: 1px solid #e0e0e0; /* Borde suave */
 }
-.texto h3{
-    text-shadow: 0px 0px 15px black;
-    padding-top: 40px;
-    color: white;
-    font-weight: 300;
-    font-size: 27px;
+
+.card:hover {
+  transform: translateY(-10px); /* Elevar tarjeta al pasar el mouse */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
 }
-.texto p{
-    align-items: center;
-    padding: 20px;
-    color:white;
-    font-size: 0px;
-    font-weight: 300;
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
 }
-.imagenes .texto{
-    width: 600px;
-    height: 100px;
-    transition: 1s;
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px; /* Espaciado inferior */
 }
-.imagenes:hover .texto{
-    transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(-150px);
-    height: 300px;
-    background-color: rgba(63, 106, 138, 0.71);
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
 }
-.imagenes:hover .texto p{
-    transition: font-size 0s .2s linear;
-    font-size: 23px;
-    font-weight: 300;
-    text-shadow: 0px 0px 10px #000000;
+
+  
+/* footer */
+
+footer {
+  background-color: #d1e7d6;
+  padding: 10px 0;
+  text-align: center;
 }
-.puntos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-.puntos p{
-    font-size: 100px;
-    font-weight: 500;
-    margin-top: -50px;
-    color: black;
+
+.footer-btn {
+  color: #9959b2;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-.puntos .bold{
-    font-weight: 700;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #5E17EB ;
+
+.footer-btn:hover {
+  color: #fcf1b9;
 }
